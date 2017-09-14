@@ -23,6 +23,22 @@ module AdjustableTable
         , view
         )
 
+{-| An adjustable table that allows you to resize and reorder columns
+
+# Model
+@docs AdjustableTable
+
+# Update
+@docs Msg, update, subscriptions
+
+# Configuring the slider
+@docs init, setTableHeaders, setTableHeadersFromStrings, setTableHeadersFromHtml, setTableRows, getTableRowFromStrings, getTableRowFromHtml 
+
+# View
+@docs view
+
+-}
+
 import Html exposing (Html, Attribute)
 import Html.Attributes exposing (style, class)
 import Html.Events exposing (on)
