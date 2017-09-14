@@ -26,13 +26,13 @@ module AdjustableTable
 {-| An adjustable table that allows you to resize and reorder columns
 
 # Model
-@docs AdjustableTable
+@docs AdjustableTable, Header, Settings, HeaderSettings
 
 # Update
 @docs Msg, update, subscriptions
 
-# Configuring the slider
-@docs init, setTableHeaders, setTableHeadersFromStrings, setTableHeadersFromHtml, setTableRows, getTableRowFromStrings, getTableRowFromHtml 
+# Configuring the table
+@docs init, setTableHeaders, setTableHeadersFromStrings, setTableHeadersFromHtml, setTableRows, getTableRowFromStrings, getTableRowFromHtml, setSettings, defaultSettings, defaultHeaderSettings, setHeaderMinWidth, setHeaderMaxWidth, setHeaderWidth
 
 # View
 @docs view
