@@ -45,6 +45,8 @@ import Html.Events exposing (on)
 import Mouse exposing (Position)
 import Json.Decode as Decode
 
+{-| The base model of the table
+-}
 type AdjustableTable
     = AdjustableTable Model
 
@@ -120,6 +122,8 @@ type alias Drag =
     , currentX : Int
     }
 
+{-| The basic type accepted by the update
+-}
 type Msg
     = ResizeDragStart Int Position
     | ResizeDragAt Position
@@ -206,10 +210,9 @@ getTableRowFromHtml colStrings =
             List.indexedMap (\index content -> { index = index, content = content }) colStrings
     in
         columns
------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------
 
+{-| Returns the subscriptions necessary to run
+-}
 subscriptions : AdjustableTable -> Sub Msg
 subscriptions (AdjustableTable model) =
     let
@@ -228,6 +231,8 @@ subscriptions (AdjustableTable model) =
     in
         Sub.batch [ resizeCmds, reorderCmds ]
 
+{-| takes a model and a message and applies it to create an updated model
+-}
 update : AdjustableTable -> Msg -> (AdjustableTable, Cmd Msg)
 update (AdjustableTable model) msg =
     case msg of
@@ -381,6 +386,8 @@ onDrag : (Mouse.Position -> Msg) -> Attribute Msg
 onDrag msg =
     on "mousedown" (Decode.map msg Mouse.position)
 
+{-| Returns default adjustable table which is an empty table
+-}
 init : AdjustableTable
 init =
     let
@@ -394,6 +401,8 @@ init =
     in
         AdjustableTable model
 
+{-| Displays the table
+-}
 view : AdjustableTable -> Html Msg
 view (AdjustableTable model) =
     let
