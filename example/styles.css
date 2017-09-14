@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.table-container {
+    margin: auto;
+    width: 80%;
+    margin-top: 10%;
+}
+
+div.adjustable-table-wrapper {
+  overflow: scroll;
+  width: 100%;
+}
+
+table.adjustable-table-table {
+  overflow: scroll;
+  border-spacing: 0;
+}
+
+table.adjustable-table-table thead.adjustable-table-thead th.adjustable-table-th {
+  height: 25px;
+  border: solid 1px black;
+  overflow: hidden;
+  white-space: no-wrap;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+table.adjustable-table-table thead.adjustable-table-thead th.adjustable-table-th div.adjustable-table-header-content {
+  display: inline-block;
+  width: calc(100% - 3px);
+  height: 100%;
+  text-align: center;
+}
+table.adjustable-table-table thead.adjustable-table-thead th.adjustable-table-th div.adjustable-table-header-content.reorder {
+  cursor: all-scroll;
+}
+table.adjustable-table-table thead.adjustable-table-thead th.adjustable-table-th div.adjustable-table-header-grip {
+  width: 3px;
+  position: relative;
+  z-index: 88;
+  float: right;
+  height: 100%;
+  background-color: black;
+}
+table.adjustable-table-table thead.adjustable-table-thead th.adjustable-table-th div.adjustable-table-header-grip.resize {
+  cursor: col-resize;
+}
+table.adjustable-table-table tbody.adjustable-table-tbody tr.adjustable-table-tr td.adjustable-table-td {
+  border: solid 1px black;
+}
