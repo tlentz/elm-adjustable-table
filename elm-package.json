@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "An elm package for a table with the ability to resize and reorder columns.",
     "repository": "https://github.com/tlentz/elm-adjustable-table.git",
     "license": "BSD3",
