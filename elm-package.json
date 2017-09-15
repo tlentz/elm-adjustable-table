@@ -1,6 +1,6 @@
 {
     "version": "1.0.1",
-    "summary": "An elm package for a table with the ability to resize and reorder columns.",
+    "summary": "deprecated: use http://package.elm-lang.org/packages/tlentz/elm-fancy-table/latest",
     "repository": "https://github.com/tlentz/elm-adjustable-table.git",
     "license": "BSD3",
     "source-directories": [
