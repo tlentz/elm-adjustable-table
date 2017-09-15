@@ -1,6 +1,6 @@
 {
-    "version": "1.0.1",
-    "summary": "deprecated: use http://package.elm-lang.org/packages/tlentz/elm-fancy-table/latest",
+    "version": "1.0.3",
+    "summary": "deprecated: use tlentz/elm-fancy-table/latest",
     "repository": "https://github.com/tlentz/elm-adjustable-table.git",
     "license": "BSD3",
     "source-directories": [
